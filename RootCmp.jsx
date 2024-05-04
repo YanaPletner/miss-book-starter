@@ -1,4 +1,4 @@
-
+import {BookIndex} from "./cmps/BookIndex.jsx"
 const { useState } = React
 
 export function RootCmp() {
@@ -18,8 +18,7 @@ export function RootCmp() {
     </header> 
 
         <main className="content-grid">
-            <h1>Hello React</h1>
-            {route === 'book-index' }
+            {route === 'book-index' && BookIndex}
 
         </main>
         </section>
